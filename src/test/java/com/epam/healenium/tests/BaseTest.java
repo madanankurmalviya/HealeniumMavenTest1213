@@ -15,7 +15,6 @@ import java.util.HashMap;
 
 public class BaseTest {
     static protected WebDriver driver;
-    static protected HashMap<PagesType, FrameworkPage> pages;
     public static void main (String []args) throws MalformedURLException {
 
         driver = new DriverContext(DriverType.LOCAL).getDriver(BrowserType.CHROME);

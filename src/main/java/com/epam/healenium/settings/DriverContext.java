@@ -15,13 +15,16 @@ public class DriverContext {
     private IDriverInterface context;
 
     public DriverContext(DriverType local) {
+
         switch (local) {
             case LOCAL:
                 this.context = new LocalDriver();
                 break;
+
             case PROXY:
                 this.context = new ProxyDriver();
                 break;
+
             case REMOTE:
                 this.context = new RemoteDriver();
                 break;
@@ -30,16 +33,20 @@ public class DriverContext {
     }
 
     public WebDriver getDriver(BrowserType browser) throws MalformedURLException {
+
         switch (browser) {
             case CHROME:
                 this.driver = context.setDriver(context.useChrome());
                 break;
+
             case FIREFOX:
                 this.driver = context.setDriver(context.useFirefox());
                 break;
+
             case IE:
                 this.driver = context.setDriver(context.useEdge());
                 break;
+
         }
         return this.driver;
     }
