@@ -1,9 +1,9 @@
 package com.epam.healenium.constants;
 
 public enum PageUrl {
-    TEST_ENV_URL("https://elenastepuro.github.io/test_env/index.html"),
-    CALLBACK_URL("https://mdn.github.io/web-components-examples/life-cycle-callbacks/"),
-    MARKUP_URL("http://sha-test-app.herokuapp.com/");
+    TEST_ENV_URL("https://www.google.com"),
+    CALLBACK_URL("https://www.google.com"),
+    MARKUP_URL("https://www.google.com");
 
     private final String urlName;
 
